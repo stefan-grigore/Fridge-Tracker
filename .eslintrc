@@ -1,0 +1,97 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "standard"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2018
+    },
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+        "space-infix-ops": [
+            "error", 
+            {"int32Hint": 
+                false
+            }
+        ],
+        "prefer-const": [
+            "error"
+        ],
+        "max-len": [
+            "error",
+            {
+                "code": 120
+            }
+        ],
+        "max-depth": [
+            "error"
+        ],
+        "no-extra-parens": [
+            "error"
+        ],
+        "no-useless-return": [
+            "error"
+        ],
+        "no-multiple-empty-lines": [
+            "error"
+        ],
+        "no-var": [
+            "error"
+        ],
+        "complexity": [
+            "error"
+        ],
+        "no-shadow": [
+            "error"
+        ],
+        "no-global-assign": [
+            "error", 
+            {"exceptions": 
+                [
+                    "addEventListener",
+                    "fetch",
+                    "Response"
+                ]
+            }
+        ],
+        "no-unused-vars": [
+            "error",
+            {
+                "varsIgnorePattern": "addEventListener|fetch|Response"
+            }
+        ],
+        "indent": [
+            "error",
+            4
+        ],
+        "linebreak-style": [
+            "error",
+            "unix"
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "semi": [
+            "error",
+            "never"
+        ],
+        "no-console": [
+            "error", 
+            { "allow": [
+                "log",
+                "error"
+                ] 
+            }
+        ]
+    }
+}
