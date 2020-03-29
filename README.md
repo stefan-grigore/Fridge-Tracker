@@ -11,6 +11,8 @@ Each shelf has a sensor that tracks what is placed on it. The position and confi
 
 ### Architecture
 
+Each tracker in the shelf tracker component resolves the promise of the recipe checker which triggers it to check whether recipes can be cooked with what is now available in the fridge.
+
 ![](architecture.png)
 
 ### Developing steps
